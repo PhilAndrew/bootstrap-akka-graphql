@@ -34,3 +34,5 @@ enablePlugins(DockerPlugin)
 
 dockerExposedPorts := Seq(8080)
 dockerEntrypoint := Seq("bin/%s" format executableScriptName.value, "-Dconfig.resource=docker.conf")
+
+
